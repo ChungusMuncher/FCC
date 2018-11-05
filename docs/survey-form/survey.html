@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <title>Survey </title>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1 id="title">Neverwinter visitor's survey</h1>
+            <p id="description">Your feedback helps us to improve Neverwinter Resort.</p><hr>
+            <form id="survey-form">
+                <div class="container col-md-4">
+                    <div class="form-group">
+                        <i class="material-icons prefix">face</i>
+                        <label for="name" id="name-label">Name:</label>
+                        <input class="form-control" placeholder="Enter your name..." id="name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="material-icons prefix">email</i>
+                        <label for="email" id="email-label">Email Address:</label>
+                        <input class="form-control" placeholder="Enter your e-mail address..." id="email" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="material-icons prefix">date_range</i>
+                        <label for="number" id="number-label">Age:</label>
+                        <input class="form-control" placeholder="Enter your age..." id="number" type="number" min="1" max="110" required>
+                        
+                    </div>
+                    <div class="input-field">
+                        <label for="dropdown">What was your favourite part of your visit to Neverwinter?</label>
+                        <select class="form-control" id="dropdown" required>
+                            <option value="" disabled selected>Choose one</option>
+                            <option value="1">The rides</option>
+                            <option value="2">The food</option>
+                            <option value="3">The live performances</option>
+                        </select><br>
+                    </div>
+                    <label>What's your gender?</label>
+                    <div id="radios" class="text-left">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="1" id="male" name="radio">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="1" id="female" name="radio">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="1" id="other" name="radio">
+                            <label class="form-check-label" for="other">Other/Prefer not to say</label>
+                        </div>
+                    </div>
+                    <br><label>Anywhere you think we can improve? Select as many as you like.</label><hr>
+                    <div id="checks" class="text-left">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="1" id="access" name="check">
+                            <label class="form-check-label" for="access">Disabled Access</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="2" id="lav" name="check">
+                            <label class="form-check-label" for="lav">Toilets</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="3" id="customer" name="check">
+                            <label class="form-check-label" for="customer">Customer Services</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="4" id="food" name="check">
+                            <label class="form-check-label" for="food">Quality of Food and Drink</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="5" id="parking" name="check">
+                            <label class="form-check-label" for="parking">Parking Facilities</label>
+                        </div>
+                    </div><hr>
+                    <div class="form-group">
+                        <label for="textarea">Any additional comments?</label>
+                        <textarea class="form-control" id="textarea" rows="3"></textarea>
+                    </div>
+                    <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
