@@ -1,7 +1,11 @@
 body {
   text-align: center;
   font-family: "Raleway", sans-serif;
-  background-color: #faebd7;
+  background-color: #fce4ec;
+}
+
+i {
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */
