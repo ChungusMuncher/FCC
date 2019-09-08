@@ -1,0 +1,16 @@
+/* Shifts the logo over slightly to the left */
+#header-img {
+  right: 10px; }
+
+.navbar {
+  left: 50px; }
+
+.media-body h4 {
+  font-family: 'Gayathri', sans-serif; }
+.media-body h5 {
+  font-family: 'Fira Sans', sans-serif; }
+
+#logotext {
+  font-family: 'Gayathri', sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
