@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>CMD for Dummies</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <!-- My custom CSS-->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <nav class="bg-light border-right sidebar-wrapper" id="navbar">
+      <header class="sidebar-heading" id="navbarheading">CMD for Dummies </header>
+      <div class="list-group list-group-flush">
+        <a href="#Introduction" class="list-group-item list-group-item-action bg-light nav-link">Introduction</a>
+        <a href="#What_is_the_Command_Prompt?" class="list-group-item list-group-item-action bg-light nav-link">What is the Command Prompt?</a>
+        <a href="#Open_Command_Prompt" class="list-group-item list-group-item-action bg-light nav-link">Open Command Prompt</a>
+        <a href="#Personalise_Command_Prompt" class="list-group-item list-group-item-action bg-light nav-link">Personalise Command Prompt</a>
+        <a href="#Navigating_Directories" class="list-group-item list-group-item-action bg-light nav-link">Navigating Directories</a>
+        <a href="#Shutdown" class="list-group-item list-group-item-action bg-light nav-link">Shutdown</a>
+      </div>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+      </nav>
+
+      <div class="container-fluid">
+        <main id="main-doc">
+          <section class="main-section" id="Introduction">
+            <header>
+              <h3 class="mt-4">Introduction</h3>
+            </header>
+            <p>Welcome to CMD for Dummies! This is a short "course" as such that should get you up and running with some basic CMD commands. By the end of this, you should be able to:</p>
+            <ul id="expectations" class="list-group-flush">
+              <li class="list-group-item">Understand what the command prompt is</li>
+              <li class="list-group-item">Open the command prompt</li>
+              <li class="list-group-item">Personalize the command prompt</li>
+              <li class="list-group-item">Manipulate files and directories</li>
+              <li class="list-group-item">Shut down the computer</li>
+            </ul>
+            <p>All of this through the command prompt!</p>
+            <b>NOTE:</b><p>The course assumes you're using a Windows computer. Any modern version will do, but make sure you have one before proceeding!</p>
+            <p>Let's get started!</p>
+          </section>
+          <hr>
+          <section class="main-section" id="What_is_the_Command_Prompt?">
+            <header>
+              <h3 class="mt-4">What is the Command Prompt?</h3>
+            </header>
+            <p> CMD, or Command Prompt, is a program on your computer, installed by default. It's commonly known as a terminal emulator. Its main purpose is to open <b>terminal windows</b>.</p>
+            <p>Terminal windows allow you to access the <b>CLI (Command Line Interface)</b>. This is vital for our purposes.</p>
+            <p>A CLI is a little harder to use than a GUI (Graphical User Interface, which you are using to view this website currently), as they require more knowledge to use. The only thing you can do in a CLI
+              is type in commands, unlike a GUI where you can click on multiple options and make a lot of selections.
+            </p>
+          </section>
+          <hr>
+          <section class="main-section" id="Open_Command_Prompt">
+            <header>
+                <h3 class="mt-4">Open Command Prompt</h3>
+            </header>
+            <p>Press<code><kbd>Win + R</kbd></code> together. A box like this should appear:</p>
+            <img src="images/runbox.png" alt="Windows Run Box" class="img-thumbnail">
+            <p>Type <code><kbd>cmd</kbd></code> into the box, then press <code><kbd>Enter</kbd></code> .</p>
+            <p>You'll then be greeted with this box:</p>
+            <img src="images/cmdwindow.png" alt="The CMD window" class="img-thumbnail">
+            <p>Welcome to CMD! Let's get started. The name "jack" will be replaced by your username when you open CMD for yourself.</p>
+          </section>
+          <hr>
+          <section class="main-section" id="Personalise_Command_Prompt">
+            <header>
+              <h3 class="mt-4">Personalise Command Prompt</h3>
+            </header>
+            <p>A bit plain though, no? Let's spice it up (if only a little!) with some colour. Here's a list to choose from:</p>
+            <img src="images/colouroptions.png" alt="CMD colour options" class="img-thumbnail">
+            <p>Enter <code><kbd>color</kbd></code> , followed by a combination of two of these numbers/Letters, into the terminal window, then press <code><kbd>Enter</kbd></code>.</p>
+            <p><b>IMPORTANT:</b> The first digit is for the <b>foreground</b> and the second digit is for the <b>background</b>.</p>
+            <p>If done correctly, your text/background should change to your chosen colour!</p>
+            <p>Here's an example with <code><kbd>color 5f</kbd></code>.</p>
+            <img src="images/example.png" alt="Example of green text in CMD" class="img-thumbnail">
+            <p>Ooh, fancy!</p>
+            <p>You can also enter a single digit to change the colour of the <b>text ONLY</b>.</p>
+            <p>Now that we've made CMD our own, let's move on to some of its functionalities.</p>
+          </section>
+          <hr>
+          <section class="main-section" id="Navigating_Directories">
+            <header>
+              <h3 class="mt-4">Navigating Directories</h3>
+            </header>
+            <p>To create a directory (folder) we use the command <code><kbd>mkdir</kbd></code>. Enter that, followed by the name of the directory you want to create, into CMD.</p>
+            <p>You won't see any output, but that means the command has been successful. Typing <code><kbd>dir</kbd></code> and pressing <kbd>Enter</kbd> should give you an alphabetical list of all directories.</p>
+            <p>Search for your directory within this list. Now, how do we actually access this from the command prompt?</p>
+            <p>Use the command <kbd>cmd</kbd> (change directory) followed by your directory name, to navigate to your directory. </p>
+            <p>You'll notice the current line change slightly to reflect this.</p>
+            <p>To navigate backwards one directory, type <kbd>cmd ..</kbd>.</p>
+          </section>
+          <hr>
+          <section class="main-section" id="Shutdown">
+            <header>
+              <h3 class="mt-4">Shutdown</h3>
+            </header>
+            <p>For our last trick, simply type <kbd>shutdown</kbd> into CMD. I'm sure you can guess what happens next!</p>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- FreeCodeCamp Tests-->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
