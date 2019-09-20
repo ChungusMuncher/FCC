@@ -1,27 +1,53 @@
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
-section {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-#contact, #projects, #welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+#welcome-section {
+  width: 100vw;
   height: 100vh;
+  background-image: url(welcome.png);
+}
+#welcome-section h1 {
+  font-size: 3rem;
+  font-family: "Rubik", sans-serif;
+  color: #0000A0;
+}
+#welcome-section p {
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #FFFFF0;
+}
+
+#navbar button {
+  display: flex;
+  justify-content: end;
+}
+
+#projects {
+  overflow: auto;
+  background: linear-gradient(125deg, #3e5f77 0%, #00123a 100%);
+}
+#projects .paddedcontainer {
+  padding: 25px 25px 25px 25px;
+}
+#projects h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #FFFFF0;
+}
+
+.centeredmiddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .demo a {
   position: absolute;
   bottom: 20px;
-  left: 48%;
+  left: 50%;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
@@ -38,81 +64,64 @@ section {
 }
 
 .arrow a {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .arrow a span {
   position: absolute;
   top: 0;
-  left: 48%;
-  width: 56px;
-  height: 56px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
   margin-left: -12px;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  -webkit-animation: arrows 2s infinite;
+  animation: arrows 2s infinite;
+  opacity: 0;
   box-sizing: border-box;
 }
 
-.up {
-  bottom: -50px;
-  left: -2.25%;
-  transform: rotate(180deg);
+.arrow a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
-#welcome-section {
-  background-image: url(welcome.png);
-}
-#welcome-section h1 {
-  position: absolute;
-  font-family: "Oxygen", sans-serif;
-  font-size: 5rem;
-  color: #eee;
-}
-#welcome-section p {
-  position: absolute;
-  top: 550px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 2.5rem;
-  color: #eee;
+.arrow a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
-#projects {
-  background: linear-gradient(125deg, #00103a 0%, #3e5f77 100%);
-}
-#projects h1 {
-  position: absolute;
-  top: 1200px;
-  font-family: "Oxygen", sans-serif;
-  font-size: 3rem;
-  color: #eee;
+.arrow a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
-#contact {
-  background: #4e54c8;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #4e54c8, #8f94fb);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+@-webkit-keyframes arrows {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-#contact h1 {
-  position: absolute;
-  top: 2200px;
-  left: 43.5%;
-  font-size: 3rem;
-  color: #eee;
-}
-#contact .contact-links {
-  position: absolute;
-  top: 2500px;
-  z-index: 99999999;
-}
-#contact .contact-links .contact-details {
-  font-size: 2rem;
-  font-family: "Mukta", sans-serif;
-  color: #eee;
+@keyframes arrows {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
