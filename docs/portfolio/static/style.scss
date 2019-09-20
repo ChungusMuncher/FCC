@@ -3,6 +3,8 @@ html {
     scroll-behavior: smooth;
 }
 
+// Default styling (mobile first)
+
 #welcome-section {
     width: 100vw;
     height: 100vh;
@@ -21,25 +23,33 @@ html {
 
 }
 
-#navbar {
-    button {
-        display: flex;
-        justify-content: end;
-    }
-}
 
 #projects {
     overflow: auto;
     background: linear-gradient(125deg, #3e5f77 0%, #00123a 100%);
-    .paddedcontainer {
-        padding: 25px 25px 25px 25px;
-    }
 
     h1 {
     text-align: center;
     font-size: 1.5rem;
     color: #FFFFF0;
     }
+}
+
+#contact {
+  height: 20vh;
+  background-color: #00123a;
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #FFFFF0;
+  }
+}
+.contact-links {
+  a, i  {
+    color: #FFFFF0;
+    font-size: 1.5rem;
+  }
 }
 
 // Extra utilities
@@ -50,7 +60,13 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
+}
+
+.paddedcontainer25 {
+  padding: 25px 25px 25px 25px;
+}
+paddecontainer15 {
+  padding: 15px 15px 15px 15px;
 }
 
 .demo a {
