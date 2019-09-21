@@ -1,6 +1,7 @@
 // Enable smooth scrolling
 html {
     scroll-behavior: smooth;
+    margin: 0
 }
 
 // Default styling (mobile first)
@@ -32,21 +33,54 @@ html {
     text-align: center;
     font-size: 1.5rem;
     color: #FFFFF0;
+    font-family: 'Rubik', sans-serif;
+    }
+
+    .project-tile {
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    .cardbg {
+      background-color: #3949ab;
+      color: #FFFFF0;
+
+      hr {
+        background-color: #FFFFF0;
+      }
+
+      h5 {
+        font-family: 'Rubik', sans-serif;
+      }
+
+      p {
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      
+      .darkbutton {
+        background-color: #00123a;
+        color: #FFFFF0;
+      }
     }
 }
 
 #contact {
-  height: 20vh;
+  overflow: auto;
   background-color: #00123a;
 
   h1 {
     text-align: center;
     font-size: 2rem;
     color: #FFFFF0;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  hr {
+    background-color: #FFFFF0;
   }
 }
 .contact-links {
-  a, i  {
+  a i  {
     color: #FFFFF0;
     font-size: 1.5rem;
   }
@@ -63,9 +97,9 @@ html {
 }
 
 .paddedcontainer25 {
-  padding: 25px 25px 25px 25px;
+  padding: 25px 25px 15px 25px;
 }
-paddecontainer15 {
+.paddedcontainer15 {
   padding: 15px 15px 15px 15px;
 }
 
