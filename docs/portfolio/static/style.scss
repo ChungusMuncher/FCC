@@ -7,12 +7,11 @@ html {
 // Default styling (mobile first)
 
 #welcome-section {
-    width: 100vw;
     height: 100vh;
     background-image: url(welcome.png);
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-family: 'Rubik', sans-serif;
         color: #0000A0
     }
@@ -36,11 +35,8 @@ html {
     font-family: 'Rubik', sans-serif;
     }
 
-    .project-tile {
-      margin: auto;
-      margin-top: 10px;
-    }
-
+  
+    
     .cardbg {
       background-color: #3949ab;
       color: #FFFFF0;
@@ -51,10 +47,12 @@ html {
 
       h5 {
         font-family: 'Rubik', sans-serif;
+        font-size: 1.3rem;
       }
 
       p {
         font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.1rem;
       }
       
       .darkbutton {
@@ -83,9 +81,33 @@ html {
   a i  {
     color: #FFFFF0;
     font-size: 1.5rem;
+    padding-bottom: 10px;
   }
 }
 
+// Stick cards to each other on screen sizes less than 1000 pixels:
+@media only screen and (max-width: 1000px) {
+  #projects .project-tile {
+    margin: auto;
+    margin-top: 10px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1001px) {
+
+  #welcome-section {
+
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 2.5rem;
+    }
+  }
+
+}
 // Extra utilities
 
 .centeredmiddle {
@@ -97,10 +119,10 @@ html {
 }
 
 .paddedcontainer25 {
-  padding: 25px 25px 15px 25px;
+  padding: 25px 0px 15px 0px;
 }
 .paddedcontainer15 {
-  padding: 15px 15px 15px 15px;
+  padding: 15px 0px 15px 0px;
 }
 
 .demo a {
